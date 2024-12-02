@@ -4,10 +4,11 @@ import { Post } from '../post/entities/post.entity';
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: process.env.DB_HOST,
-  port: Number(process.env.DB_PORT),
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: 'dpg-ct6r3o1u0jms739bbagg-a.oregon-postgres.render.com',
+  port: 5432,
+  username: 'db_mayo_consultoria_user',
+  password: '4SVqxz1yzxzRtswzDJq09bJShkgbiTJi',
+  database: 'db_mayo_consultoria',
+  ssl: true,
   entities: [User, Post],
 };
