@@ -1,0 +1,24 @@
+
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Gustavo Ribeiro da Silva",
+    "email": "gustavo@gmail.com",
+    "password": "eyx1944Anjl"
+}
+
+###
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "email": "Gustavo Ribeiro da Silva"
+}
+
+
+###
+DELETE http://localhost:3000/users/1

@@ -1,0 +1,27 @@
+
+GET http://localhost:3000/post
+
+###
+POST http://localhost:3000/post
+Content-Type: application/json
+
+{
+    "titulo": "Hello World",
+    "descricao": "descrição de ola mundo",
+    "status": "olha mundo status",
+    "dataDeCriacao": "2024-12-01",
+    "dataDeAtualizacao": "2024-12-02"
+}
+
+###
+PATCH  http://localhost:3000/post/1
+Content-Type: application/json
+
+{
+
+    "dataDeAtualizacao": "2024-12-02"
+}
+
+
+###
+DELETE http://localhost:3000/post/1
